@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+  <html lang="fr">
+    <head>
+      <meta charset="UTF-8">
+      <title>Mon portfolio</title>
+      <link rel="stylesheet" href="portfolio.css"> <!-- Feuille de style principale -->
+      <link rel="stylesheet" href="themes/white.css"> <!-- Changement de thème ici -->
+    </head>
+
+    <body>
+
+        <!-- 
+          Barre de navigation principale.
+          À noter : le lien actif contient un nom de classe "actif"
+        -->
+      <header>
+        <nav>
+        
+            <a href="index.html">Accueil</a></li>
+            <a href="qui-suis-je.html">Qui-suis-je ?</a>
+            <a href="mes-projets.html">Mes projets</a>
+            <a class="actif" href="me-contacter.html">Me contacter</a>
+          
+        </nav>
+      </header>
+
+      <div class="block">
+      <main>
+
+        <!-- 
+          Menu latéral montrant une photo de profil
+          ainsi que des informations personnelles
+        -->
+        <aside>
+
+          <!-- Photo de profil à remplacer -->
+          <figure>
+            <img src="pp.avif" alt="Photo de profil">
+          </figure>
+
+          <!-- Informations personnelles -->
+          <h2>Laiadhi Gibril</h2>
+          <ul>
+           
+            <p>&#128205; 15 Rue Arago 38000 <br>
+            &#128381; 0760306413</p>
+            
+     
+          </ul>
+        </aside>
+
+        <!-- Le contenu principal apparait ici -->
+        <article>
+
+          <!-- Titre de la page -->
+          <h1>Me contacter</h1>
+
+          <form action="mon-script.php" method="POST">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Envoyer">
+          </form>
+
+        </article>
+
+      </main>
+    </div>
+
+      <!-- Barre des réseaux sociaux -->
+      <footer>
+        <nav>
+        
+            <a href="#" target="_blank">Github</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">Instagram</a>
+          
+        </nav>
+      </footer>
+    </body>
+  </html>
+
+
